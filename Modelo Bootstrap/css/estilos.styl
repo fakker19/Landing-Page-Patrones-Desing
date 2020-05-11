@@ -1,0 +1,352 @@
+@import "nib"
+@import "normalize.css"
+@import "style.css"
+.nav
+	/*height 105px*/
+	padding 40px 0
+	background #2c3a5b
+	font-family 'Montserrat'
+	.container
+		max-width 80%
+		margin-right auto
+		margin-left auto
+		align-items center		
+		display flex
+		justify-content space-between
+	&-logo
+		font-size 20px
+		&-titulo
+			margin 0
+			color white
+			
+	&-menu
+		&-contenedor
+			padding 0
+			margin 0
+			&-listas
+				list-style none
+				display inline-block
+				margin 0 20px
+				&-enlaces
+					text-decoration none
+					color #ffffff
+					text-transform uppercase
+					font-weight 600
+				&-enlaces:hover
+					color #18bc9c
+	&-menuicono
+		color white
+		display none
+		z-index 1
+		span
+			font-size 20px
+.header
+	background #18bc9c
+	padding 90px 0
+	&-contenedor
+		max-width 80%
+		margin-left auto
+		margin-right auto
+		text-align center
+		color white
+		&-figure
+			margin 0
+		&-titulo
+			font-family 'Montserrat'
+			text-transform uppercase
+			font-size 4.75rem
+		&-rayita
+			max-width 21%
+			border 2px solid white
+		&-rayita:after
+			content  "\2605"
+			font-size 3rem
+			position relative
+			top -28px
+			background #18bc9c
+			padding 5px
+		&-descripcion
+			font-family 'Lato'
+			font-size 1.75rem
+			
+.portafolio
+	padding 70px 0
+	font-family 'Montserrat'
+	&-contenedor
+		max-width 80%
+		margin-right auto
+		margin-left auto
+		&-fila1
+			text-align center
+			color #2c3a5b
+			margin-bottom 50px
+			&-titulo
+				font-size 3rem
+				text-transform uppercase
+			&-separador
+				width 21%
+				border 2px solid
+			&-separador:after
+				content  "\2605"
+				font-size 3rem
+				position relative
+				top -28px
+				background white
+				padding 5px
+		&-fila2
+			display flex
+			justify-content space-around
+			flex-wrap wrap
+			&-cajaImagenes
+				min-width 250px
+				width 30%
+				position relative
+				margin 20px 0
+				overflow hidden
+				&-figure
+					margin 0
+					img
+						display block
+						width 100%
+				&-icono
+					position absolute
+					display flex
+					justify-content center
+					align-items center
+					top 120%
+					bottom 0
+					right 0
+					left 0
+					color transparent
+					font-size 3rem
+					transition 1s
+					/*background rgba(24,188,156,.8)*/	
+			&-cajaImagenes:hover
+				.icon-search-plus
+					top 0			
+					color white
+					background rgba(24,188,156,.8)
+					transition 1s
+.about
+	background #18bc9c
+	padding-top 40px
+	padding-bottom 80px								
+	&-contenedor
+		max-width 80%
+		margin-right auto
+		margin-left auto
+		font-family 'Montserrat'
+		&-fila1
+			margin-top 50px
+			margin-bottom 20px
+			text-align center
+			color white
+			&-titulo
+				font-size 3rem
+				text-transform uppercase				
+			&-separador
+				width 21%
+				border 2px solid white
+			&-separador:after
+				content  "\2605"
+				font-size 3rem
+				position relative
+				top -28px
+				background #18bc9c
+				padding 5px
+		&-fila2
+			display flex
+			justify-content center
+			align-items flex-start
+			flex-wrap wrap
+			&-párrafo
+				min-width 250px		
+				width 35%
+				margin 20px 20px
+				color white
+				font-family 'Lato'
+				font-size 20px
+				line-height 1.5
+				word-spacing 5px
+		&-fila3
+			text-align center
+			margin-top 20px
+			a
+				display inline-block
+				color white
+				font-family 'Lato'
+				font-size 1.25rem
+				text-decoration none
+				border 2px solid white
+				padding 1rem 1.75rem
+				border-radius 4px
+				transition .3s
+				.icon-download:before
+					margin-right 15px		
+			a:hover
+				background white
+				color black
+				transition .3s				
+.contacto
+	padding-bottom 80px
+	&-contenedor
+		max-width 80%
+		margin-right auto
+		margin-left auto
+		&-fila1
+			text-align center
+			color #2c3a5b
+			font-family 'Montserrat'
+			&-titulo
+				font-size 3rem
+				text-transform uppercase
+			&-separador
+				width 21%
+				border 2px solid #2c3a5b	
+			&-separador:after
+				content  "\2605"
+				font-size 3rem
+				position relative
+				top -28px
+				background white
+				padding 5px
+		&-fila2
+			&-formulario
+				width 70%
+				margin-right auto
+				margin-left auto
+				font-family 'Lato'
+				margin-top 40px
+				&-bloque
+					margin-bottom 20px
+					input,
+					textarea
+						font-size 1.5rem
+						color #495057
+						display block
+						width 100%
+						border none
+						outline 0
+						padding 20px 0
+					hr
+						border 1px solid #e9ecef
+				#submit
+					background #18bc9c
+					border none
+					padding 20px 15px
+					color white
+					font-size 1.25rem
+					border-radius 4px
+					transition .3s
+				#submit:hover
+					background #128f76
+					transition .3s
+					cursor pointer
+.footer
+	background #2c3e50
+	padding-top 40px
+	padding-bottom 80px
+	&-contenedor
+		max-width 80%
+		margin-left auto
+		margin-right auto
+		font-family 'Montserrat'
+		display flex
+		justify-content space-around
+		flex-wrap wrap
+		&-bloque
+			width 30%
+			min-width 250px
+			text-align center
+			color white
+			// border 1px solid red
+			h3
+				font-size 24px
+			p
+				font-family 'Lato'
+				font-size 20px
+				a
+					text-decoration none
+					color #18bc9c
+				a:hover
+					text-decoration underline
+			&-listbox
+				padding 0
+				display flex
+				justify-content center
+				flex-wrap wrap
+				li
+					display inline-flex
+					list-style none
+					// justify-content center
+					margin 0 5px
+					a
+						color white
+						text-decoration none
+						padding 10px
+						border 2px solid white
+						border-radius 50%
+						font-size 20px
+						font-family 'Lato'
+						transition .5s
+					a:hover
+						background white
+						color black
+						transition .5s
+					.icon-facebook-f
+						padding 10px 14px
+                 	
+@media screen and (max-width:768px)
+	.nav
+		position relative
+		&-menuicono
+			display inline-block
+		&-menu.active
+			left 0	
+			transition .5s
+		&-menu
+			position absolute
+			top 0
+			background rgba(0,0,0,.5)
+			left -100%
+			width 100%
+			height 100vh
+			display flex
+			justify-content center
+			align-items center
+			text-align center
+			transition .5s
+			&-contenedor
+				&-listas
+					display block
+					margin 20px 0
+					border-bottom 2px solid white
+					padding-bottom 10px
+					&-enlaces
+						font-size 30px
+						padding-bottom 10px
+						font-size 30px
+	.header
+		margin-top 0
+
+@media screen and (max-width: 420px)
+	.header
+		&-contenedor
+			&-titulo
+				font-size 3.8rem				
+	.portafolio
+		&-contenedor
+			&-fila1
+				&-titulo
+					font-size 2.2rem
+	.about
+		&-contenedor
+			&-fila1
+				&-titulo
+					font-size 2.2rem
+	.contacto
+		&-contenedor
+			&-fila1
+				&-titulo
+					font-size 2.2rem
+					
